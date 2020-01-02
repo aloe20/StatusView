@@ -1,0 +1,18 @@
+<resources>
+    <declare-styleable name="StatusSwitcher">
+        <attr name="contentId" format="reference" />
+        <attr name="loadingId" format="reference" />
+        <attr name="errorId" format="reference" />
+        <attr name="emptyId" format="reference" />
+        <attr name="contentLayout" format="reference" />
+        <attr name="loadingLayout" format="reference"/>
+        <attr name="errorLayout" format="reference" />
+        <attr name="emptyLayout" format="reference"/>
+        <attr name="show" format="enum">
+            <enum name="content" value="0"/>
+            <enum name="loading" value="1"/>
+            <enum name="error" value="2"/>
+            <enum name="empty" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>
