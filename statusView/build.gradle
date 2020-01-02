@@ -1,16 +1,25 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.novoda.bintray-release'
+def version_name = "0.0.1"
+def version_code = 1
+publish {
+    userOrg = "aloe"
+    groupId = "com.aloe"
+    artifactId = "statusView"
+    publishVersion = version_name
+    desc = "状态切换视图控件"
+    website = "https://github.com/aloe20/StatusView"
+}
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
-
-
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode version_code
+        versionName version_name
     }
 
     buildTypes {
