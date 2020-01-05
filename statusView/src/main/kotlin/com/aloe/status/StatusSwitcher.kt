@@ -116,6 +116,7 @@ class StatusSwitcher : ViewAnimator {
   }
 
   fun showView(type: StatusType) {
+    show = type.value
     super.setDisplayedChild(viewIndex[type.value])
   }
 
